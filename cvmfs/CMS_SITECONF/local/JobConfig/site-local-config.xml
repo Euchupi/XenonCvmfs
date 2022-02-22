@@ -1,0 +1,28 @@
+ <site-local-config>
+ <site name="T3_CN_THU">
+    <event-data>
+      <catalog url="trivialcatalog_file:/etc/cvmfs/CMS_SITECONF/local/PhEDEx/storage.xml?protocol=direct"/>
+    </event-data>
+    <local-stage-out>
+     <command value="gfal2"/>
+     <catalog url="trivialcatalog_file:/etc/cvmfs/CMS_SITECONF/local/PhEDEx/storage.xml?protocol=direct"/>
+     <se-name value="192.168.3.110"/>
+     <phedex-node value="T3_CN_THU"/>
+    </local-stage-out>
+    <calib-data>
+      <frontier-connect>
+        <proxy url="http://192.168.3.110:3128"/>
+        <backupproxy url="http://cmsbpfrontier.cern.ch:3128"/>
+        <backupproxy url="http://cmsbproxy.fnal.gov:3128"/>
+        <server url="http://cmsfrontier.cern.ch:8000/FrontierInt"/>
+        <server url="http://cmsfrontier1.cern.ch:8000/FrontierInt"/>
+        <server url="http://cmsfrontier2.cern.ch:8000/FrontierInt"/>
+        <server url="http://cmsfrontier3.cern.ch:8000/FrontierInt"/>
+      </frontier-connect>
+    </calib-data>
+    <source-config>
+        <statistics-destination name="cms-udpmon-collector.cern.ch:9331" /> 
+    </source-config>
+ </site>
+ </site-local-config>
+

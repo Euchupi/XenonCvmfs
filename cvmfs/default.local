@@ -1,0 +1,5 @@
+CVMFS_REPOSITORIES="$((echo cms.cern.ch,grid.cern.ch,atlas.cern.ch,faser.cern.ch;ls /cvmfs)|sort -u|paste -sd ,)"
+CVMFS_DEFAULT_DOMAIN="cms.cern.ch,grid.cern.ch,atlas.cern.ch,faser.cern.ch"
+CVMFS_HTTP_PROXY="http://202.122.33.52:3128"
+CMS_LOCAL_SITE=/etc/cvmfs/SITECONF/local
+CVMFS_QUOTA_LIMIT='20000'
